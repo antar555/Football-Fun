@@ -65,22 +65,12 @@ body{
     max-height: 6.6em;
     line-height: 26px;
 }
-}
-.text button{
-    background: #ef6f6c;
-    border-radius: 20px;
-    border: none;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-a{
+
+
+.text a{
     text-align: center;
     display: block;
-    background-color: #ef6f6c;
+    
     background-color: rgb(116, 3, 116);
     border-radius: 20px;
     border: none;
@@ -91,6 +81,7 @@ a{
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 20px;
 
 }
 
@@ -98,17 +89,19 @@ a{
 
 /* Mobile Device */
 
-@media only screen and (max-width:788px){
+@media only screen and (max-width:688px){
     .container-player{
         width: 100%;
     }
     .players{
         /* background-color:aqua; */
         grid-template-columns: repeat(1, 1fr);
+       margin: 40px;
         
     }
     .player{
-        flex-direction: column;
+        flex-direction: row;
+        
     }
 }
 
@@ -122,6 +115,7 @@ a{
     .players{
         /* background-color:aqua; */
         grid-template-columns: repeat(2, 1fr);
+        margin: 35px;
         
 
     }
