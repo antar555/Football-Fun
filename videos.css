@@ -49,6 +49,8 @@
 @media only screen and (max-width:688px){
     .video-container{
         width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .videos{
         /* background-color:aqua; */
