@@ -1,0 +1,154 @@
+.news-container{
+    margin-top: 30px;
+}
+.news-container h1{
+    text-align: center;
+}
+
+.top-news{
+    margin: 50px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+   
+}
+
+.top-news img{
+    /* width: 80%; */
+    /* height: 200px; */
+    /* width: 300px; */
+    height: 256px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+
+   
+}
+
+.top-news .news{
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    /* width: 330px; */
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    /* border-radius: 20px; */
+    transition: transform .3s;
+    /* height: 474px; */
+    overflow: hidden;
+    border-radius: 20px;
+    
+
+}
+
+.top-news .news{
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 330px;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    /* border-radius: 20px; */
+    transition: transform .3s;
+    /* height: 474px; */
+    overflow: hidden;
+
+}
+
+.news-text p{
+    font-size: 16px;
+}
+
+
+.top-news .news:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+.news-text{
+    padding: 0 20px 20px;
+}
+
+.news-text h3{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.news-text p{
+    margin-top: 20px;
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 6.6em;
+    line-height: 26px;
+}
+
+
+.news-text a{
+    text-align: center;
+    display: block;
+    
+    background-color: rgb(55, 45, 202);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 7px;
+    width: 90%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+/* Media query added */
+
+/* Mobile Device */
+
+@media only screen and (max-width:688px){
+    .news-container{
+        width: 100%;
+    }
+    .top-news{
+        /* background-color:aqua; */
+        grid-template-columns: repeat(1, 1fr);
+       margin: 40px;
+        
+    }
+    .news{
+        flex-direction: row;
+        
+    }
+}
+
+
+/* Ipad  */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .news-container{
+        width: 100%;
+    }
+    .top-news{
+        /* background-color:aqua; */
+        grid-template-columns: repeat(2, 1fr);
+        margin: 35px;
+        
+
+    }
+    
+        
+
+    }
+    .news{
+        flex-direction: column;
+    }
+   
+}

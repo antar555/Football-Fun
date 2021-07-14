@@ -1,12 +1,23 @@
+.video-container{
+    /* border: 2px solid black; */
+    background-image: url(images/soccer.jpg);
+    /* opacity: 0.75; */
+   background-repeat: no-repeat;
+   
+}
+
 
 .video-container h1{
+    margin-top: 12px;
     text-align: center;
     font-size: 30px;
     background-image: linear-gradient(green, yellow);
     margin: 0 auto;
     width: 400px;
-    color: white;
+    color: red;
     font-weight: 700;
+
+   
 }
 
 .videos{
